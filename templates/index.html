@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Gold Price Prediction</title>
+    </head>
+    <body class="bg-slate-900 text-white p-10">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl font-extrabold text-yellow-500 mb-8">Gold Dashboard</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                <h2 class="text-slate-400 uppercase text-sm font-bold">Current Price (PHP/g)</h2>
+                <p class="text-5xl font-mono mt-2 text-yellow-400">₱{{ current }}</p>
+            </div>
+
+            <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                <h2 class="text-slate-400 uppercase text-sm font-bold">AI Predicted Price</h2>
+                <p class="text-5xl font-mono mt-2 text-green-400">₱{{ prediction }}</p>
+            </div>
+        </div>
+        
+        <div class="mt-10 p-4 bg-slate-800 rounded-xl text-center text-slate-500 italic">
+            Note: Predictions are based on Linear Regression trends.
+        </div>
+    </div>
+</html>
